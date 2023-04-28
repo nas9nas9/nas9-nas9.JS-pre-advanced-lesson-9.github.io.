@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+}
+.form {
+    width: 600px;
+    padding-left: 60px;
+}
+label {
+    font-size: 20px;
+}
+#login, #password, #email {
+    width: 500px;
+    height: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 3px solid lightgray;
+}
+#login:focus, #password:focus, #email:focus {
+    border: 3px solid rgb(0, 195, 255);
+}
+.add_btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding: 9px;
+    margin-top: 20px;
+}
+.add_btn:hover {
+    background-color: white;
+    color: green;
+    cursor: pointer;
+    border: 3px solid green;
+}
+.edit_btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding: 9px;
+    margin-top: 20px;
+    position: relative;
+    bottom: 10px;
+}
+.edit_btn:hover {
+    background-color: white;
+    color: green;
+    cursor: pointer;
+    border: 3px solid green;
+}
+.hide {
+    display: none;
+}
+.display {
+    width: 800px;
+}
+.display_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(164, 158, 158);
+    border-top: 1px solid rgb(164, 158, 158);
+    height: 60px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.display_table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-bottom: 1px solid grey;
+    padding: 20px;
+}
+.login {
+    margin-left: 40px;
+}
+.password {
+    margin-left: 70px;
+}
+.email{
+    margin-left: 100px;
+    margin-right: 5px;
+}
+.edit-btn {
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(234, 176, 16);
+    padding: 5px;
+    text-align: center;
+    border: 2px solid yellow;
+    margin-left: 50px;
+}
+.edit-btn:hover, .delete-btn {
+    cursor: pointer;
+}
+.delete-btn {
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(234, 16, 16);
+    padding: 5px;
+    text-align: center;
+    border: 2px solid rgb(162, 8, 8);
+}

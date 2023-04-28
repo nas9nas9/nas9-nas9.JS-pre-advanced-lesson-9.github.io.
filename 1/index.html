@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <form>
+                <label for="login">Login</label><br>
+                <input type="text" id="login" placeholder="Enter login" pattern="[a-z]{4,16}"><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" placeholder="Enter password" pattern="[a-z|0-9|\.|_|-]{4,16}"><br>
+                <label for="email">Email adress</label><br>
+                <input type="text" id="email" placeholder="Enter email" pattern=".\S+@[a-z]+\.[a-z]+"><br>
+            </form>
+            <div class="add_btn" onclick="addUser()">Add user</div>
+            <div class="edit_btn hide">Edit user</div>
+        </div>
+        <div class="display">
+            <div class="display_header">
+                <div>#</div>
+                <div >Login</div>
+                <div class="password">Password</div>
+                <div class="email">Email</div>
+                <div>Edit</div>
+                <div>Delete</div>
+            </div>
+            <div class="display-root">
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
